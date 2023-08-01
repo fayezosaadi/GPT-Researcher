@@ -1,6 +1,6 @@
 import express, {Express, Request, Response} from 'express';
 import transformQuery from "./queryTransformer";
-import {performWebSearch} from "./webSearch";
+import performWebSearch from "./webSearch";
 import analyzeContent, {AnalyzedContent} from "./contentAnalysis";
 import generateSummary from "./responseGeneration";
 import {customsearch_v1} from "@googleapis/customsearch";
