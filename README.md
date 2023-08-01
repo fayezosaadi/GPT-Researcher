@@ -97,8 +97,3 @@ The application will perform the following steps:
 ## License
 
 This project is licensed under the [MIT License.](LICENSE)
-
-In the next sections of the README.md, you can add more details about the project, its features, the technologies used,
-examples of how to use the application, troubleshooting tips, and any other relevant information to help users
-understand and utilize the GPT-Researcher application effectively.
-
