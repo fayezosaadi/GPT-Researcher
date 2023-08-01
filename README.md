@@ -10,6 +10,8 @@ from the search results, and returns a concise summary using OpenAI's Language M
     - [Installation](#installation)
     - [Setting Up Environment Variables](#setting-up-environment-variables)
 - [Usage](#usage)
+- [Design Decisions](#design-decisions)
+- [Challenges](#challenges)
 - [License](#license)
 
 ## Getting Started
@@ -28,7 +30,7 @@ Follow these instructions to set up and run the GPT-Researcher application local
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/GPT-Researcher.git
+git clone https://github.com/fayezosaadi/GPT-Researcher.git
 cd GPT-Researcher
 ```
 
@@ -77,6 +79,26 @@ The application will perform the following steps:
 - Generate a concise summary using OpenAI's Language Model.
 - Return the final summary in the response.
 
+## Design Decisions
+
+- Modularity: The application is designed with modularity in mind, separating different functionality into individual
+  modules. This makes the codebase more maintainable and allows for easy expansion in the future.
+- Asynchronous Processing: The application uses asynchronous processing and parallelization to speed up web page
+  fetching and content extraction, resulting in faster response times for the end-users.
+
+### Challenges
+
+- Google Custom Search API Limitations: The Google Custom Search API has usage limits, including the number of queries
+  per day. To overcome this, we can implement caching to reduce the number of repeated searches.
+- OpenAI Token Limit: OpenAI's Language Model has a maximum token limit per API call.
+- Speed and Performance: To improve the speed and performance of the application, I tried to optimize the content
+  extraction algorithm, but there is room for improvement.
+
 ## License
 
 This project is licensed under the [MIT License.](LICENSE)
+
+In the next sections of the README.md, you can add more details about the project, its features, the technologies used,
+examples of how to use the application, troubleshooting tips, and any other relevant information to help users
+understand and utilize the GPT-Researcher application effectively.
+
